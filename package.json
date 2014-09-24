@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/awlka/duskull/issues"
   },
-  "homepage": "https://github.com/awlka/duskull"
+  "homepage": "https://github.com/awlka/duskull",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-uglify": "^0.6.0",
+    "load-grunt-tasks": "^0.6.0"
+  }
 }
