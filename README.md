@@ -1,0 +1,4 @@
+duskull
+=======
+
+A Ghost theme
