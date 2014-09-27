@@ -22,10 +22,26 @@ module.exports = function (grunt) {
       },
       build: {
         src: 'assets/js/**/*.js',
-        dest: 'build/js/main.'
+        dest: 'build/js/a.js'
       }
+    },
+
+    sass: {
+      dist: {
+        options: {
+          style: 'compressed'
+        },
+        files: {
+          'assets/_scss/main.scss': 'build/css/a.css'
+        }
+      }
+    },
+
+    watch: {
+
     }
 
   });
+
 
 };
