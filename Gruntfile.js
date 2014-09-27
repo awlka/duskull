@@ -50,8 +50,8 @@ module.exports = function (grunt) {
 
   });
 
-  grunt.registerTask('uglify', ['uglify']);
-  grunt.registerTask('sass', ['sass']);
+  grunt.registerTask('js', ['uglify']);
+  grunt.registerTask('style', ['sass']);
 
   grunt.registerTask('default', ['watch']);
 
