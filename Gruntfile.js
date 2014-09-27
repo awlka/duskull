@@ -38,10 +38,21 @@ module.exports = function (grunt) {
     },
 
     watch: {
-
+      uglify: {
+        files: ['assets/js/**/*.js'],
+        tasks: ['uglify']
+      },
+      sass: {
+        files: ['assets/_scss/**/*.{scss,sass}'],
+        tasks: ['sass']
+      }
     }
 
   });
 
+  grunt.registerTask('uglify', ['uglify']);
+  grunt.registerTask('sass', ['sass']);
+
+  grunt.registerTask('default', ['watch']);
 
 };
