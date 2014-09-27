@@ -29,10 +29,11 @@ module.exports = function (grunt) {
     sass: {
       dist: {
         options: {
+          banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */',
           style: 'compressed'
         },
         files: {
-          'assets/_scss/main.scss': 'build/css/a.css'
+          'build/css/a.css': 'assets/_scss/main.scss'
         }
       }
     },
