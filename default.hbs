@@ -24,8 +24,39 @@
   <meta name="msapplication-TileImage" content="assets/favicon//mstile-144x144.png">
   <meta name="application-name" content="awlka">
 
+
+  <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+
+  <script type="text/javascript">
+    WebFontConfig = {
+      google: { families: [ 'Open+Sans:400italic,400,300,600:latin' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+
+  {{ghost_head}}
+
 </head>
-<body>
+<body class="{{body_class}}">
+
+  {{{body}}}
+
+  <footer class="site-footer clearfix">
+    <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
+    <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+  </footer>
+
+  {{ghost_foot}}
+
+  <script src="{{asset "js/app.js"}}"></script>
 
 </body>
 </html>
